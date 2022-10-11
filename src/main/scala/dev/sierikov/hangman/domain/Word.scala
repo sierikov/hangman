@@ -2,6 +2,7 @@ package dev.sierikov.hangman.domain
 
 final class Word(word: String) {
   val length: Int = word.length
+  val value: String = word
   def contains(char: Char): Boolean = word.contains(char)
   def toList: List[Char] = word.toList
   def toSet: Set[Char] = word.toSet
